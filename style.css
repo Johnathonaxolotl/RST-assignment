@@ -1,0 +1,47 @@
+:root {
+  --bordergradient: linear-gradient(0deg, rgb(147, 185, 147), #a4a4a4, #a4a4a4);
+}
+body{
+  font-family: Roboto,monospace;
+  background: var(--bordergradient,#a4a4a4);
+  color: white;
+}
+p {
+  font-size: 20px;
+  margin-top: -1.5em;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -40px;
+}
+.space {
+  margin-top: 250px;
+}
+.snake-image {
+  border-radius: 50%;
+  border-width: 10px;
+  border-color: black;
+  border-style: solid;
+}
+.button {
+  font-size: 25px;
+  font-family: Roboto,monospace;
+  color: white;
+  background-color: darkgreen;
+  border-radius: 46%;
+}
+.other-p {
+  font-size: 15px;
+  margin-top: 20px;
+}
+.no-image-p{
+  margin-top: 60px;
+}
+.form-border{
+  background: linear-gradient(270deg, rgb(147, 185, 147), rgb(115, 209, 115));
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}

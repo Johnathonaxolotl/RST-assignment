@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>RST-assignment</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+    <!--imports the font Roboto-->
+    <img src="Snakelogo.png" id="top" alt="Snake logo" width="25%" height="25%" class="center">
+    <!-- inserts the logo and centers it-->
+    <p>With this website you can have quick access to information regarding a large variety of snakes.<br> 
+    To get the snake you want fill in the the information below:</p>
+    <form action="href='#top'" id="snakeform" class="form-border">
+   <label for="images">
+     <input id="images" type="checkbox" name="images?" value="1" checked>Images?
+   </label><br>
+    <label for="blind-snakes">
+      <input id="blind-snakes" type="radio" name="Snake?" checked>Blind snakes
+    </label>
+    <label for="dwarf-boas">
+      <input id="dwarf-boas" type="radio" name="Snake?">Dwarf boas
+    </label>
+    <label for="shield-tailed-snakes">
+      <input id="shield-tailed-snakes" type="radio" name="Snake?">Shield-tailed snakes
+    </label>
+    <label for="pythons">
+      <input id="pythons" type="radio" name="Snake?">Pythons
+    </label>
+    <label for="boas">
+      <input id="boas" type="radio" name="Snake?">Boas
+    </label>
+    <label for="old-world-boas">
+      <input id="old-world-boas" type="radio" name="Snake?">Old world boas
+    </label>
+    <label for="vipers">
+      <input id="vipers" type="radio" name="Snake?">Vipers
+    </label>
+    <label for="mud-snakes">
+      <input id="mud-snakes" type="radio" name="Snake?">Mud snakes
+    </label><br>
+    <label for="garter-snakes">
+      <input id="garter-snakes" type="radio" name="Snake?">Garter snakes
+    </label>
+    <label for="sea-snakes">
+      <input id="sea-snakes" type="radio" name="Snake?">Sea snakes
+    </label>
+    <label for="true-cobras">
+      <input id="true-cobras" type="radio" name="Snake?">True cobras
+    </label>
+    <label for="coral-snakes">
+      <input id="coral-snakes" type="radio" name="Snake?">Coral snakes
+    </label>
+    <label for="mole-vipers">
+      <input id="mole-vipers" type="radio" name="Snake?">Mole vipers
+    </label>
+    <label for="pit-vipers">
+      <input id="pit-vipers" type="radio" name="Snake?">Pit vipers
+    </label>
+    <label for="reed-snakes">
+      <input id="reed-snakes" type="radio" name="Snake?">Reed snakes
+    </label>
+    <label for="flying-snakes">
+      <input id="flying-snakes" type="radio" name="Snake?">Flying snakes
+    </label>
+    <label for="other-snakes">
+      <input id="other-snakes" type="radio" name="Snake?">Other
+    </label><br>
+      <button type="button" id="snakebutton" class="button" onclick="selector()">Enter</button>
+    </form>
+    <img src="Snake1.png" style="float: right;">
+    <p class="space" id="blind-snake-img">Blind Snake(Scolecophidia)</p>
+     <a href="https://en.wikipedia.org/wiki/Scolecophidia"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Leptotyphlops_humilis_-_head.jpg" class="snake-image" alt="Blind snake(Scolecophidia)"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="dwarf-boa-img">Dwarf boa(Tropidophiidae)</p>
+     <a href="https://en.wikipedia.org/wiki/Tropidophiidae"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Cuban_Giant_Trope_%28Tropidophis_melanurus%29_%288577519420%29.jpg/800px-Cuban_Giant_Trope_%28Tropidophis_melanurus%29_%288577519420%29.jpg" class="snake-image" width="266px" height="167px" alt="dwarf boa(Tropidophiidae) by Thomas Brown"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="shield-tailed-snake-img">Shield-tailed snake(Uropeltidae)</p>
+     <a href="https://en.wikipedia.org/wiki/Uropeltidae"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Spotted_earth_snake_Uropeltis_maculata.jpg/800px-Spotted_earth_snake_Uropeltis_maculata.jpg" class="snake-image" width="266px" height="177px" alt="Shield-tailed snake(Uropeltidae) by Davidvraju"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="python-img">Python(Pythonidae)</p>
+     <a href="https://en.wikipedia.org/wiki/Pythonidae"><img src="https://cdn.pixabay.com/photo/2015/09/16/13/41/green-tree-python-942684_960_720.jpg" width="240px" height="160px" class="snake-image" alt="Python(Pythonidae)"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="boa-img">Boa(Boidae)</p>
+     <a href="https://en.wikipedia.org/wiki/Boidae"><img src="https://live.staticflickr.com/6/8409087_3e0b381fdb.jpg" class="snake-image" width="300px" height="209px" alt="Boa(Boidae) by Tod baker"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="old-world-boa-img">Old world boa(Erycinae)</p>
+     <a href="https://en.wikipedia.org/wiki/Erycinae"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Eryx_jaculus.jpg/800px-Eryx_jaculus.jpg" class="snake-image" width="266px" height="175px" alt="Old world boa(Erycinae) by Guy Haimovitch"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <img src="Snake4.png" style="float: right;">
+     <p class="space" id="viper-img">Viper(Viperidae)</p>
+     <a href="https://en.wikipedia.org/wiki/Viperidae"><img src="https://th.bing.com/th/id/OIP.Yy27WJE7tBp4mQTcEglaXwHaFj?pid=ImgDet&rs=1" width="237px" height="177px" class="snake-image" alt="Viper(Viperidae)"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="mud-snake-img">Mud snake(Homalopsidae)</p>
+     <a href="https://en.wikipedia.org/wiki/Homalopsidae"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Cerberus_rynchops_Andamans.jpg/800px-Cerberus_rynchops_Andamans.jpg" width="267px" height="200px" class="snake-image" alt="Mud snake(Homalopsidae) by Swati Sidhu"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="garter-snake-img">Garter snake(Thamnophis)</p>
+     <a href="https://en.wikipedia.org/wiki/Garter_snake"><img src="https://live.staticflickr.com/3683/11746156764_22e9b8ee4f_4k.jpg" width="300px" height="200px" class="snake-image" alt="Garter snake(Thamnophis)"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="sea-snake-img">Sea snake(Hydrophiinae)</p>
+     <a href="https://en.wikipedia.org/wiki/Sea_snake"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Japan_sea_snake%2C_Ornate_Sea_Snake_%28Hydrophis_ornatus%29_%2815167155673%29.jpg/800px-Japan_sea_snake%2C_Ornate_Sea_Snake_%28Hydrophis_ornatus%29_%2815167155673%29.jpg" width="267px" height="178px" class="snake-image" alt="Sea snake(Hydrophiinae) by harum.koh"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="true-cobra-img">True cobra(Naja)</p>
+     <a href="https://en.wikipedia.org/wiki/Naja"><img src="https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/pd13-num-0141b-l.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=4c50eb95cbf800f57760ac6953ce4b84"  width="217px" height="172px" class="snake-image" alt="True cobra(Naja)"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="coral-snake-img">Coral snake(Calliophiinae)</p>
+     <a href="https://en.wikipedia.org/wiki/Coral_snake"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Coral_snake.jpg/800px-Coral_snake.jpg" width="400px" height="191px" class="snake-image" alt="Coral snake(Calliophiinae)"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="mole-viper-img">Mole viper(Atractaspidinae)</p>
+     <a href="https://en.wikipedia.org/wiki/Atractaspidinae"><img src="https://th.bing.com/th/id/R251cd699aa5258cca3dd391d999b8ffb?rik=QStzimveNwyFkQ&riu=http%3a%2f%2ffarm4.staticflickr.com%2f3249%2f2931913803_c6de7a4af7_z.jpg&ehk=Je24%2bBHX6%2bgtuw6S%2bcn1GshAHXTtRD62SUepAuCB1ok%3d&risl=&pid=ImgRaw" width="319px" height="196px" class="snake-image" alt="Mole viper(Atractaspidinae)"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="pit-viper-img">Pit viper(Crotalinae)</p>
+     <a href="https://en.wikipedia.org/wiki/Pit_viper"><img src="https://static.pexels.com/photos/53478/basilisk-rattlesnake-rattlesnake-snake-viper-53478.jpeg" width="297px" height="222px" class="snake-image" alt="Pit viper(Crotalinae)"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="reed-snake-img">Reed snake(Calamariinae)</p>
+     <a href="https://en.wikipedia.org/wiki/Calamariinae"><img src="https://live.staticflickr.com/5815/23914671486_2e4c8892b8_h.jpg" width="267px" height="200px" class="snake-image" alt="Reed snake(Calamariinae) by Green Baron Pro"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="flying-snake-img">Flying snake(Chrysopelea)</p>
+     <a href="https://en.wikipedia.org/wiki/Chrysopelea"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/Chrysopelea_taprobanica.jpg/800px-Chrysopelea_taprobanica.jpg" class="snake-image" width="267px" height="178px" alt="Flying snake(Chrysopelea) by Gihan Jayaweera"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="other-snake-img">Other</p>
+     <p class="other-p">Acrochordus</p>
+     <a href="https://en.wikipedia.org/wiki/Acrochordus"><img src="https://lh4.ggpht.com/hIGnDWnODkmx23_HcscjBS65sG52Q5D4VCBeWQC0KmG_5CvwA-NsW3FTOyqqayjOUlMUxjso7xArzHoXxQ_Q=s1200" width="400px" height="202px" class="snake-image" alt="Acrochordus"></a><br>
+     <p class="other-p">Pseudoxyrhophiinae</p>
+     <a href="https://en.wikipedia.org/wiki/Pseudoxyrhophiinae"><img src="https://live.staticflickr.com/1814/43106664865_aa66908dbd_4k.jpg" width="269px" height="202px" class="snake-image" alt="Pseudoxyrhophiinae by Jean and Fred"></a><br>
+     <p class="other-p">Lamprophiinae</p>
+     <a href="https://en.wikipedia.org/wiki/Lamprophiinae"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Lamprophis_fuliginosus_South_African_Brown_House_Snake_IMG_0620s.jpg/529px-Lamprophis_fuliginosus_South_African_Brown_House_Snake_IMG_0620s.jpg" width="212px" height="240px" class="snake-image" alt="Lamprophiinae by JonRichfield"></a><br>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space" id="blind-snake">Blind Snake(Scolecophidia)<br><a href="https://en.wikipedia.org/wiki/Scolecophidia">Wikipedia</a></p>
+     <p class="space , no-image-p" id="dwarf-boa">Dwarf boa(Tropidophiidae)<br><a href="https://en.wikipedia.org/wiki/Tropidophiidae">Wikipedia</a></p>
+     <p class="space , no-image-p" id="shield-tailed-snake">Shield-tailed snake(Uropeltidae)<br><a href="https://en.wikipedia.org/wiki/Uropeltidae">Wikipedia</a></p>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space , no-image-p" id="python">Python(Pythonidae)<br><a href="https://en.wikipedia.org/wiki/Pythonidae">Wikipedia</a></p>
+     <p class="space , no-image-p" id="boa">Boa(Boidae)<br><a href="https://en.wikipedia.org/wiki/Boidae">Wikipedia</a></p>
+     <p class="space , no-image-p" id="old-world-boa">Old world boa(Erycinae)<br><a href="https://en.wikipedia.org/wiki/Erycinae">Wikipedia</a></p>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space , no-image-p" id="viper">Viper(Viperidae)<br><a href="https://en.wikipedia.org/wiki/Viperidae">Wikipedia</a></p>
+     <p class="space , no-image-p" id="mud-snake">Mud snake(Homalopsidae)<br><a href="https://en.wikipedia.org/wiki/Homalopsidae">Wikipedia</a></p>
+     <p class="space , no-image-p" id="garter-snake">Garter snake(Thamnophis)<br><a href="https://en.wikipedia.org/wiki/Garter_snake">Wikipedia</a></p>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <img src="Snake6.png" style="float: right;">
+     <p class="space , no-image-p" id="sea-snake">Sea snake(Hydrophiinae)<br><a href="https://en.wikipedia.org/wiki/Sea_snake">Wikipedia</a></p>
+     <p class="space , no-image-p" id="true-cobra">True cobra(Naja)<br><a href="https://en.wikipedia.org/wiki/Naja">Wikipedia</a></p>
+     <p class="space , no-image-p" id="coral-snake">Coral snake(Calliophiinae)<br><a href="https://en.wikipedia.org/wiki/Coral_snake">Wikipedia</a></p>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space , no-image-p" id="mole-viper">Mole viper(Atractaspidinae)<br><a href="https://en.wikipedia.org/wiki/Atractaspidinae">Wikipedia</a></p>
+     <p class="space , no-image-p" id="pit-viper">Pit viper(Crotalinae)<br><a href="https://en.wikipedia.org/wiki/Pit_viper">Wikipedia</a></p>
+     <p class="space , no-image-p" id="reed-snake">Reed snake(Calamariinae)<br><a href="https://en.wikipedia.org/wiki/Calamariinae">Wikipedia</a></p>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+     <p class="space , no-image-p" id="flying-snake">Flying snake(Chrysopelea)<br><a href="https://en.wikipedia.org/wiki/Chrysopelea">Wikipedia</a></p>
+     <p class="space , no-image-p" id="other-snake">Other</p>
+     <p class="other-p">Acrochordus<br><a href="https://en.wikipedia.org/wiki/Acrochordus">Wikipedia</a></p>
+     <p class="other-p">Pseudoxyrhophiinae<br><a href="https://en.wikipedia.org/wiki/Pseudoxyrhophiinae">Wikipedia</a></p>
+     <p class="other-p">Lamprophiinae<br><a href="https://en.wikipedia.org/wiki/Lamprophiinae">Wikipedia</a></p>
+     <p class="other-p">Go to <a href="#top">top</a></p>
+  </body>
+</html>
